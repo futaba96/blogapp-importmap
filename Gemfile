@@ -59,6 +59,9 @@ group :development do
   gem 'web-console'
   # ERB → Haml変換用ツール（開発専用）
   gem 'erb2haml'
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
 end
 
 group :test do
