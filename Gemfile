@@ -28,6 +28,7 @@ gem 'jbuilder'
 # gem "bcrypt", "~> 3.1.7"
 
 gem 'annotate'
+gem 'devise'
 gem 'faker'
 gem 'hamlit'
 
