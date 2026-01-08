@@ -19,4 +19,14 @@
 class Profile < ApplicationRecord
   enum gender: { male: 0, female: 1, other: 2 }
   belongs_to :user
+
+  def age
+    return '不明' unless birthday
+
+    today = Date.current
+    age = today.year - birthday.year
+    age -= 1 if today < birthday + age.years
+
+    "#{age}歳"
+  end
 end
